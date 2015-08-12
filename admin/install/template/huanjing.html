@@ -1,0 +1,47 @@
+<div class="huanjing">
+<h3><span>环境信息</span></h3>
+<table width="80%" border="0" cellspacing="0" cellpadding="8">
+  <tr>
+    <td width="50"><strong>服务器域名</strong></td>
+    <td width="50"><?php echo $_SERVER['HTTP_HOST'];?>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>服务器操作系统</strong></td>
+    <td></span><?php echo PHP_OS;?></td>
+  </tr>
+  <tr>
+    <td><strong>服务器解译引擎</strong></td>
+    <td><?php echo $_SERVER['SERVER_SOFTWARE'];?>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>GD支持</strong></td>
+    <td><?php echo extension_loaded('gd')&&function_exists('imagecreate')?'√支持GD':'<span style="color:red">×不支持GD(与图片有关的一些功能将不能使用)</span>';?></td>
+  </tr>
+  <tr>
+    <td><strong>MySQL支持</strong></td>
+    <td><?php if(extension_loaded('mysql')&&function_exists('mysql_connect')){echo '√支持Mysql';}else{echo '<span style="color:red">×不支持Mysql</span>';$check=1;}?></td>
+  </tr>
+</table>
+
+<h3><span>环境目录</span></h3>
+<table width="100%" border="0" cellspacing="0" cellpadding="8">
+<?php
+foreach($mulu_write as $k=>$v){
+		?>
+
+  <tr>
+    <td width="50"><strong><?php echo $v?></strong></td>
+    <td width="50"><?php if(check_dir_write(CMS_PATH.$v)){
+		echo "[√]可写";
+		
+		}else{
+		echo "[x]不可写";	
+			}?></td>
+  </tr>
+  <?php }?>
+</table>
+
+</div>
+<div class="aciton_btn">
+<a href="index.php?step=step1" class="ac_btn">返回上一步</a><a href="index.php?step=step3" class="ac_btn">继续下一步</a>
+</div><!--btn-->

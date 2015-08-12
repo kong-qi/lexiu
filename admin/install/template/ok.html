@@ -1,0 +1,11 @@
+<?php
+				$fp=fopen(ADMIN_PATH.'inc/install.lock','w+');
+				@fwrite('kong-qi',$fp);
+				fclose($fp);
+?>
+<div class="install_ok">
+<h3>恭喜你,空气管理系统(KQ)已经成功安装</h3>
+<p>默认用户名：admin 密码：123456</p>
+<?php 
+echo '<p><a href="http://'.$_SERVER['HTTP_HOST'].str_replace("\\","/",str_replace("install","",dirname($_SERVER['PHP_SELF']))).'login.php">进入后台管理</a></p>';  ?>
+</div><!--ok-->

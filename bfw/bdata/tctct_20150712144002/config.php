@@ -1,0 +1,29 @@
+<?php
+	$b_table="shop_admin,shop_ads,shop_basic,shop_city,shop_danbao,shop_news,shop_newstype,shop_order,shop_picture,shop_pingjia,shop_product,shop_tj,shop_type,shop_users";
+	$tb[shop_admin]=1;
+$tb[shop_ads]=1;
+$tb[shop_basic]=1;
+$tb[shop_city]=1;
+$tb[shop_danbao]=1;
+$tb[shop_news]=1;
+$tb[shop_newstype]=1;
+$tb[shop_order]=1;
+$tb[shop_picture]=1;
+$tb[shop_pingjia]=1;
+$tb[shop_product]=6;
+$tb[shop_tj]=1;
+$tb[shop_type]=1;
+$tb[shop_users]=1;
+
+	$b_baktype=0;
+	$b_filesize=300;
+	$b_bakline=500;
+	$b_autoauf=1;
+	$b_dbname="tctct";
+	$b_stru=1;
+	$b_strufour=0;
+	$b_dbchar="auto";
+	$b_beover=0;
+	$b_insertf="replace";
+	$b_autofield=",,";
+	?>

@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 全局通用
+----------------------------------------------- */
+body {
+	background-color:#EEEEEE;
+	font-family: "微软雅黑", "宋体", Arial, Verdana, sans-serif;
+	
+	font-size:12px;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+div, dl, dt, dd, ul, li, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+}
+img {
+	border:0;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+a {
+	text-decoration:none;
+	color:#626262;
+}
+a:hover {
+	text-decoration:none;
+}
+input, textarea {
+	vertical-align:middle;
+}
+*:focus {
+	outline: none;
+}
+em, i {
+	font-style:normal;
+}
+.clear {
+	clear:both;
+	display: block;
+	height:0;
+	line-height:0;
+	font-size:0;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+*html .clearfix {
+	height:1%;
+}
+*+html .clearfix {
+	height:1%;
+}
+.none {
+	display:none;
+}
+.cue {
+	color:#999;
+}
+p.cue {
+	margin-top:5px;
+}
+.cueRed {
+	color:#C00;
+}
+.ml {
+	padding-left:10px;
+}
+.pl {
+	padding-left:10px;
+}
+.pr {
+	padding-right:10px;
+}
+
+
+/*按钮*/
+
+.btn {
+	display: inline-block;
+	background-color: rgb(0, 114, 198);
+	border: 0px none;
+	color: rgb(255, 255, 255);
+	padding: 6px 15px;
+	font-weight: bold;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+
+/* 主体框架
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 用户登录
+----------------------------------------------- */
+#login {
+	margin:0px auto;
+	width:368px;
+	margin-top:120px;
+	overflow:hidden;
+}
+#login .dologo {
+	text-align:center;	
+	margin-bottom:30px;
+}
+#login li {
+	height:34px;
+	margin-bottom:15px;
+}
+#login .inpLi {
+	border:1px solid #CCC;
+}
+#login .inpLi b {
+	background-color:#E0E0E0;
+	float:left;
+	display:block;
+	width:70px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	font-weight:normal;
+}
+#login .inpLi .inpLogin, #login .inpLi .vcode {
+	float:left;
+	background-color:#EBEBEB;
+	border:0;
+	padding:7px 8px;
+	height:20px;
+	line-height:20px;
+	color:#000;
+	font-size:14px;
+}
+#login .inpLi .inpLogin {
+	width:280px;
+}
+#login .inpLi .vcode {
+	width:198px;
+	
+}
+#login .vcodePic {
+	height:38px;
+}
+#login .vcodePic .inpLi {
+	float:left;
+	width:288px;
+}
+#login .vcodePic #captcha {
+	float:right;
+	cursor:pointer;
+	border:1px solid #ccc
+}
+
+.pager {
+    color: rgb(102, 102, 102);
+}
+.pager a.curr {
+    background: none repeat scroll 0% 0% rgb(255, 245, 232);
+    color: rgb(255, 153, 0);
+}
+.pager a {
+	text-decoration:none;
+    font-size: 12px;
+    padding: 3px 5px;
+    color: rgb(153, 153, 153);
+    border: 1px solid rgb(204, 204, 204);
+    margin-right: 5px;
+}
+
+/*通用样式*/
+.mr10{ 
+margin-left:10px;	
+	}
+.empty_tip{ margin-left:10px; font-size:12px; color:#F00}	
+.hide{ display:none}
+#kq .tuwen{ padding:3px 5px; background:#FE4002;border-radius:3px; color:#fff}
+#kq .danpage{ background:#28B779;padding:3px 5px; border-radius:3px; color:#fff}
+#kq .delete{ background:#06506e;padding:3px 5px; border-radius:3px; color:#fff}
+#kq .wenzhang{ background:#0072C6;padding:3px 5px; border-radius:3px; color:#fff; }
+#kq .goshow{ background:#666;padding:3px 5px; border-radius:3px; color:#fff;}
+#kq .renbtn{
+	background: #E70044;
+	padding:3px 5px; background:#FE4002;border-radius:3px; color:#fff
+}
+#kq .tuwen:hover{ background:#d93802;}
+#kq .danpage:hover{ background:#229965;}
+#kq .delete:hover{ background:#043e54;}
+#kq .wenzhang:hover{ background:#0065ad; }
+#kq .goshow:hover{ background:#4d4d4d;}
+#kq .renbtn:hover{
+	background: #cf003e;
+	
+}
+.mtop10{
+	margin-top: 10px;
+}
+.mbom10{
+	margin-bottom: 10px;
+}
+.mlt10{
+	margin-left: 10px;
+}
+.mlr10{
+	margin-right: 10px;
+}
+.mtb10{
+	margin: 10px 0;
+}
+.mlt10{
+	margin: 0 10px;
+}
+.ptop10{
+	padding-top: 10px;
+}
+.pbom10{
+	padding-bottom: 10px;
+}
+.plt10{
+	padding-left: 10px;
+}
+.plr10{
+	padding-right: 10px;
+}
+.ptb10{
+	padding: 10px 0;
+}
+.plt10{
+	padding:0 10px ;
+}
+.red{
+	color:#f00;
+	font-weight: bold;
+}
+
+.pic_add table{
+		margin-bottom: 10px;
+	
+}

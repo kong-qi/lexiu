@@ -1,0 +1,41 @@
+<?php
+@include("../../inc/header.php");
+
+/*
+		SoftName : EmpireBak Version 2008
+		Author   : wm_chief
+		Copyright: Powered by www.phome.net
+*/
+
+DoSetDbChar('utf8');
+E_D("DROP TABLE IF EXISTS `yp_user`;");
+E_C("CREATE TABLE `yp_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `kq_uuid` varchar(120) DEFAULT NULL,
+  `kq_ctime` varchar(120) DEFAULT NULL,
+  `kq_sort` tinyint(4) DEFAULT '0',
+  `kq_name` varchar(255) DEFAULT NULL,
+  `kq_email` varchar(120) DEFAULT NULL,
+  `kq_sex` varchar(120) DEFAULT NULL,
+  `kq_age` varchar(120) DEFAULT NULL,
+  `kq_tel` varchar(120) DEFAULT NULL,
+  `kq_qq` varchar(25) DEFAULT NULL,
+  `kq_address` varchar(255) DEFAULT NULL,
+  `kq_checked` tinyint(4) DEFAULT '1',
+  `kq_pwd` varchar(120) DEFAULT NULL,
+  `kq_uniqueid` varchar(120) DEFAULT NULL,
+  `kq_type` varchar(60) DEFAULT NULL,
+  `kq_openid` varchar(120) DEFAULT NULL,
+  `kq_token` varchar(255) DEFAULT NULL,
+  `kq_picurl` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8");
+E_D("replace into `yp_user` values('24','237eee74253358b26456a24dc3a1e37e','1428952067','0','andy',NULL,'1',NULL,NULL,NULL,NULL,'1',NULL,'0ea83ec60c3028b91d3927226d4af213f4aa0ce8',NULL,'00D26A423895C06F6033B3AB4C5DC232','5F1D4A75385A26D3A5C1CE9642779B4E','http://q.qlogo.cn/qqapp/101207722/00D26A423895C06F6033B3AB4C5DC232/100');");
+E_D("replace into `yp_user` values('25','8db65043104209f24774659cceb45125','1428975153','0','andy',NULL,'1',NULL,NULL,NULL,NULL,'1',NULL,'1c3126ca11f6c7ef2956583428c5aaa04345721d',NULL,'186A50983D6F572D6AC7BF98C75C9E7F','1166DC45480DBCEB20FA0F4A29A5BADA','http://q.qlogo.cn/qqapp/101207722/186A50983D6F572D6AC7BF98C75C9E7F/100');");
+E_D("replace into `yp_user` values('26','d3b4f98b8ef03992cf4acfc49d2c0e7c','1428975247','0','优联盟乐秀网',NULL,'1',NULL,NULL,NULL,NULL,'1',NULL,'846529cfbc5b44c9d988963b7d04246db85b6a6f',NULL,'E0AE71FFB852AB558762281059A797BB','06B9734D9091E6F3B255F154DB480635','http://q.qlogo.cn/qqapp/101207722/E0AE71FFB852AB558762281059A797BB/100');");
+E_D("replace into `yp_user` values('27','aec58f7dca6c0559396960924dff764a','1428978313','0','空气',NULL,'1',NULL,NULL,NULL,NULL,'1',NULL,'7855035bfc361644b5fa25a5ebfab8b963515066',NULL,'658774F16D9D3CA30BB75299D7A63979','5BF97102315D749430EE08DD80536BB2','http://q.qlogo.cn/qqapp/101207722/658774F16D9D3CA30BB75299D7A63979/100');");
+E_D("replace into `yp_user` values('28','5a3313a68cacdfed26daef7c9e3a5bbf','1429125078','0','King',NULL,'1',NULL,NULL,NULL,NULL,'1',NULL,'2a9c43d0b7632403d0110bfdd512a8ab8182062f',NULL,'3090D55D2D7AC33ED3AD00B72728C5CB','E30C888F9258AE700D0893169A4B37CB','http://q.qlogo.cn/qqapp/101207722/3090D55D2D7AC33ED3AD00B72728C5CB/100');");
+E_D("replace into `yp_user` values('30','dd1187cb1bf1e404af1fbd57aff8045a','1429141098','0','空气',NULL,'1',NULL,NULL,NULL,NULL,'1',NULL,'b13b23dbf95b64610120fd519419b75268084038',NULL,'62E399762F6FEF2388DE65F48E5E78B4','30A53CCB61A4D22ADDD84C1014E302F3','http://q.qlogo.cn/qqapp/101207722/62E399762F6FEF2388DE65F48E5E78B4/100');");
+
+@include("../../inc/footer.php");
+?>

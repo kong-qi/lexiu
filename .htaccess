@@ -1,0 +1,25 @@
+#注释用"#"
+RewriteEngine on
+RewriteBase /
+RewriteRule ^help-(.*)-(.*)\.html$ /help.php?lmid=$1&id=$2
+RewriteRule ^adv\.html$ /help.php?lmid=3
+RewriteRule ^help\.html$ /help.php
+RewriteRule ^user\.html$ /user.php
+RewriteRule ^user-ed\.html$ /user.php?ed=1
+RewriteRule ^user-add\.html$ /user_input.php
+RewriteRule ^user-update-(.*)\.html$ /user_update.php?uuid=$1
+RewriteRule ^user-list\.html$ /user_list.php
+RewriteRule ^user-list-(.*)\.html$ /user_list.php?page=$1
+RewriteRule ^user-ly\.html$ /liuyan_list.php
+RewriteRule ^user-out\.html$ /login_out.php
+RewriteRule ^user-ly-(.*)\.html$ /liuyan_list.php?page=$1
+RewriteRule ^over\.html$ /index.php?time=over
+RewriteRule ^show-(.*)\.html$ /show.php?id=$1
+RewriteRule ^index-(.*)\.html$ /index.php?id=$1
+RewriteRule ^git-(.*)\.html$ /gitf.php?id=$1
+RewriteRule ^user-del-(.*)\.html$ /inc/action_get.php?action=del&id=$1
+
+
+
+
+                       

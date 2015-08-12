@@ -1,0 +1,49 @@
+<script type="text/javascript">
+var $time=0;
+var $totaltime=3;
+$is_time=$totaltime;
+function time_go(){
+	$is_time=$is_time-1;
+	$time=$time+1;
+if($time==$totaltime){
+
+		location.href='index.php?step=step5';
+	}
+	setTimeout("time_go()",1000);
+}
+</script>
+<div class="set_ms">
+<table width="80%" border="0" cellspacing="0" cellpadding="8">
+<?php
+$is_install="";
+foreach($data as $k=>$v){	
+
+if(!$v[1]==""){
+	
+
+?>
+  <tr>
+    <td width="50"><strong><?php echo $v[1];?></strong></td>
+    <td width="50"><?php if(@mysql_query($v[0],$conn)){?><span style="color:#060">[√]安装成功</span><?php }else{?><span style="color:#C30">[x]安装失败</span><?php $is_install=1;}?></td>
+  </tr>
+  <?php	
+  
+  }else{ 
+  @mysql_query($v[0],$conn);//写人演示数据
+  }
+  }?>
+</table>
+<div class="mt-bm-10">
+		<?php if($is_install){
+				echo '<p style="color:red; font-weight:bold">部分表安装失败，请重新安装</p>';
+			}else{
+
+				echo '<script>time_go();</script>';
+                      
+			}
+            ?>
+   
+</div>
+		
+			
+</div>
